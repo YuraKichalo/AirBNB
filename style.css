@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Avenir, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #3D4E61;
+}
+
+li {
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, li {
+    color: #3D4E61;
+}
+
+/* header */
+
+.header {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 19px 15px 28px;
+}
+
+.headerNav {
+    display: flex;
+}
+
+.headerNavList {
+    display: flex;
+    margin-right: 38px;
+    align-items: center;
+}
+
+.headerNavList > li {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.headerNavList > li:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s ease;
+}
+
+.headerNavList a:hover {
+    color: #FD5C63;
+    transition: 0.5s ease;
+}
+
+/* main img */
+
+.mainImg {
+    height: 464px;
+    max-width: 1440px;
+    background-image: url(images/header/Image.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 39px;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* quietApartment  1st*/ 
+
+.quietApartment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.apartmentLeftSide > h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.apartmentDescription > h6 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #687C94;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.roomParameters {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.roomParameters > span {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 42px;
+}
+
+.apartmentDescription > p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+.apartmentDescription > a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.apartmentDescription > a:hover {
+    display: inline-block;
+    transform: scale(1.2, 1.2);
+    color: #FD5C63;
+    transition: 0.5s ease;
+}
+
+.apartmentRigthSide {
+    border: 1px solid #E1E7ED;
+    border-radius: 3px;
+    padding: 30px 30px 38px 30px;
+    height: 330px;
+}
+
+.apartmentRigthSide p {
+    margin-bottom: 39px;
+}
+
+.apartmentRigthSide label {
+    display: flex;
+    flex-direction: column;
+}
+
+.apartmentRigthSide input {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #E1E7ED;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 17px;
+    margin-bottom: 16px;
+}
+
+.apartmentRigthSide input::placeholder {
+    color: #3D4E61;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.apartmentRigthSide input:last-child {
+    background: #FD5C63;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.apartmentRigthSide input:last-child:hover {
+    background: white;
+    color: #FD5C63;
+    border: 2px solid #FD5C63;
+    transform: translateY(5px);
+    transition: 0.5s ease;
+}
+
+/* amenities 2nd */
+
+.amenities {
+    margin-bottom: 66px;
+}
+
+.amenities > h2 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+
+.amenitiesList {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, 100px);
+    grid-row-gap: 15px;
+    grid-column-gap: 100px;
+    margin-bottom: 15px;
+}
+
+.amenities > a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.amenities > a:hover {
+    display: inline-block;
+    transform: scale(1.2, 1.2);
+    color: #FD5C63;
+    transition: 0.5s ease;
+}
+
+/* reviews 3rd */
+
+.reviews {
+    margin-bottom: 70px;
+}
+
+.reviews > h1 {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+.userData {
+    padding-left: 71px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.userData::before {
+    content: url(images/revievs/user.svg);
+    position: absolute;
+    left: 0;
+}
+
+.userData > h4 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.user1 {
+    margin-bottom: 30px;
+}
+
+.user1 > p, .user2 > p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 528px;
+}
+
+/* host 4th */
+
+.host {
+    margin-bottom: 75px;
+}
+
+.host > h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 5px;
+}
+
+.host > span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+.host > p {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 453px;
+    margin-bottom: 20px;
+}
+
+.host > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #118488;
+    border-radius: 4px;
+    color: #118488;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.host > a:hover {
+    border: none;
+    color: white;
+    background: #118488;
+    transition: 0.5s ease;
+    transform: translateY(5px);
+}
+
+hr {
+    box-shadow: 0px -1px 0px #E1E7ED;
+}
+ 
+/* footer */
+
+.footer {
+    max-width: 1440px;
+    box-shadow: 0px -1px 0px #E1E7ED;
+    padding: 44px 0;
+}
+
+.footer a:hover {
+    display: inline-block;
+    transform: scale(1.1, 1.1);
+    color: #FD5C63;
+    transition: 0.5s ease;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks > h1{
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footerLinks > a {
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.footerLinks > a:nth-child(3) {
+    margin: 8px 0;
+} 
+
+
+
+@media (min-width: 1441px) and (max-width: 2000px) {
+    .header {
+        max-width: 2000px;
+    }
+
+    .mainImg {
+        max-width: 2000px;
+    }
+
+    .footer {
+        max-width: 2000px;
+    }
+}
